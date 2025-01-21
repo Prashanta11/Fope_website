@@ -25,7 +25,11 @@ const Navbar: React.FC = () => {
       {/* Logo */}
       <div className="flex items-center">
         <Link to="/">
-          <img src={logo} alt="Logo" className="w-auto h-10" />
+          <img
+            src={logo}
+            alt="Logo"
+            className="hover:opacity-80w-auto h-10 transition-transform duration-300 hover:scale-110"
+          />
         </Link>
       </div>
 
@@ -35,7 +39,7 @@ const Navbar: React.FC = () => {
           <Link
             key={index}
             to={item.link}
-            className="font-instrumentSans font-semibold text-customTeal text-lg hover:text-blue-500 tracking-wider cursor-pointer"
+            className="hover:opacity-80 font-extrabold text-customTeal text-lg hover:text-blue-500 tracking-wide cursor-pointertransition-transform duration-300 hover:scale-110"
           >
             {item.name}
           </Link>
@@ -49,32 +53,34 @@ const Navbar: React.FC = () => {
           placeholder="Search..."
           className="border-gray-300 px-4 py-2 border rounded-full focus:ring-2 focus:ring-blue-500 w-72 text-sm focus:outline-none"
         />
-        <FiSearch className="right-4 absolute text-customTeal text-xl hover:text-blue-500 cursor-pointer" />
+        <FiSearch className="right-4 absolute w-6 h-6 text-customTeal text-xl hover:text-blue-500 cursor-pointer" />
       </div>
 
       {/* Cart, Wishlist, and Login/Signup */}
       <div className="lg:flex items-center gap-6 hidden">
         {/* Cart */}
         <Link to="/cart" className="relative flex items-center">
-          <FiShoppingCart className="text-2xl text-customTeal hover:text-blue-500" />
+          <FiShoppingCart className="hover:opacity-80 text-2xl text-customTeal hover:text-blue-500 transition-transform duration-300 hover:scale-110" />
         </Link>
 
         {/* Wishlist */}
         <Link to="/wishlist" className="flex items-center">
-          <FiHeart className="text-2xl text-customTeal hover:text-blue-500" />
+          <FiHeart className="hover:opacity-80 w-6 h-6 text-customTeal hover:text-blue-500 text-2xltransition-transform duration-300 hover:scale-110" />
         </Link>
 
         {/* Login/Signup */}
         <div className="flex items-center gap-3">
           <Link to="/login" className="flex items-center gap-2">
-            <FaUserCircle className="text-customTeal text-lg" />
-            <span className="font-semibold text-customTeal text-sm lg:text-base hover:text-[#eca65c]">
+            <FaUserCircle className="hover:opacity-80 w-6 h-6 text-customTeal text-lg hover:text-blue-500 transition-transform duration-300 hover:scale-110" />
+            <span className="hover:opacity-80 font-bold text-customTeal text-sm lg:text-base hover:text-blue-500 transition-transform duration-300 hover:scale-110">
               Login
             </span>
           </Link>
           <span className="text-customTeal">|</span>
-          <Link to="/signup" className="hover:text-[#eca65c]">
-            <span className="font-semibold text-customTeal text-sm">
+
+          <Link to="/signup" className="flex items-center gap-2">
+            {" "}
+            <span className="hover:opacity-80 font-bold text-customTeal text-sm lg:text-base hover:text-blue-500 transition-transform duration-300 hover:scale-110">
               Signup
             </span>
           </Link>
