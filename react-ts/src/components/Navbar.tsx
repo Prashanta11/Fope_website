@@ -1,8 +1,8 @@
 import React from "react";
-import { FiHeart, FiSearch, FiShoppingCart, FiUser } from "react-icons/fi"; // Import icons
-import { Link } from "react-router-dom";
-import logo from "../assets/images/fope logo.svg"; // Adjust the path as necessary
 import { FaUserCircle } from "react-icons/fa";
+import { FiHeart, FiSearch, FiShoppingCart } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import logo from "../assets/images/fope logo.svg";
 
 const navItems = [
   {
@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
         <input
           type="text"
           placeholder="Search..."
-          className="border-gray-300 px-4 py-2 border rounded-full focus:ring-2 focus:ring-blue-text-blue-500 w-72 text-sm focus:outline-none"
+          className="border-gray-300 px-4 py-2 border rounded-full focus:ring-2 focus:ring-blue-500 w-72 text-sm focus:outline-none"
         />
         <FiSearch className="right-4 absolute text-customTeal text-xl hover:text-blue-500 cursor-pointer" />
       </div>
@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
               Login
             </span>
           </Link>
-          <span>|</span>
+          <span className="text-customTeal">|</span>
           <Link to="/signup" className="hover:text-[#eca65c]">
             <span className="font-semibold text-customTeal text-sm">
               Signup
