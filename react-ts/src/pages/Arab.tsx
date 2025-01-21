@@ -1,8 +1,8 @@
 import React from "react";
-import Arab1 from "../assets/images/arab1.jpeg";
-import Arab2 from "../assets/images/arab2.jpeg";
-import Arab3 from "../assets/images/arab3.jpeg";
-import Arab4 from "../assets/images/arab4.jpeg";
+import arab1 from "../assets/images/arab1.jpeg";
+import arab2 from "../assets/images/arab2.jpeg";
+import arab3 from "../assets/images/arab3.jpeg";
+import arab4 from "../assets/images/arab4.jpeg";
 
 interface FoodItem {
   id: number;
@@ -19,14 +19,14 @@ const foodItems: FoodItem[] = [
     description:
       "Fragrant rice cooked in coconut milk served with sambal, boiled egg, and anchovies.",
     price: 5.99,
-    imageUrl: Arab1,
+    imageUrl: arab1,
   },
   {
     id: 2,
     name: "Rendang",
     description: "Slow-cooked beef in a rich coconut milk and spice paste.",
     price: 12.99,
-    imageUrl: Arab2,
+    imageUrl: arab2,
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const foodItems: FoodItem[] = [
     description:
       "Grilled skewered meat served with peanut sauce ,spicy and hot.",
     price: 8.99,
-    imageUrl: Arab3,
+    imageUrl: arab3,
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const foodItems: FoodItem[] = [
     description:
       "Spicy noodle soup with a mix of coconut milk and fish-based broth.",
     price: 10.99,
-    imageUrl: Arab4,
+    imageUrl: arab4,
   },
 ];
 

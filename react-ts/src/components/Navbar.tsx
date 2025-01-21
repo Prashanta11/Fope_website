@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
           <Link
             key={index}
             to={item.link}
-            className="hover:opacity-80 font-extrabold text-customTeal text-lg hover:text-blue-500 tracking-wide cursor-pointertransition-transform duration-300 hover:scale-110"
+            className="hover:opacity-80 font-bold text-customTeal text-lg hover:text-blue-500 tracking-wide cursor-pointertransition-transform duration-300 hover:scale-110"
           >
             {item.name}
           </Link>
