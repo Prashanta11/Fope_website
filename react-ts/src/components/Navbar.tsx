@@ -22,7 +22,6 @@ const navItems = [
 const Navbar: React.FC = () => {
   return (
     <div className="top-0 z-50 sticky flex justify-between items-center gap-4 border-gray-200 bg-white shadow-sm p-5 border-b">
-      {/* Logo */}
       <div className="flex items-center">
         <Link to="/">
           <img
@@ -34,7 +33,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Navbar Links */}
-      <div className="flex flex-grow justify-center gap-6">
+      <div className="flex flex-grow justify-center gap-10">
         {navItems.map((item, index) => (
           <Link
             key={index}
