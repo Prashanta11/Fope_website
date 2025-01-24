@@ -3,7 +3,7 @@ import { ReactTyped } from "react-typed";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="relative z-10 flex flex-col justify-center items-center p-4 text-center text-customTeal">
+    <div className="relative z-10 flex flex-col justify-center items-center border-2 border-slate-200 bg-slate-200 p-4 rounded-md text-center text-customTeal">
       <ReactTyped
         className="font-semibold *:!font-instrumentSans text-3xl text-nowrap sm:text-2xl md:text-3xl lg:text-3xl tracking-wider"
         showCursor={false}
