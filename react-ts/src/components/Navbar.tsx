@@ -21,7 +21,7 @@ const navItems = [
 
 const Navbar: React.FC = () => {
   return (
-    <div className="top-0 z-50 sticky flex justify-between items-center gap-4 border-gray-200 bg-white shadow-sm p-5 border-b">
+    <div className="top-0 z-50 sticky flex justify-between items-center gap-4 border-gray-200 bg-black shadow-sm p-5 border-b">
       <div className="flex items-center">
         <Link to="/">
           <img
